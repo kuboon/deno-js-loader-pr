@@ -21,7 +21,7 @@ wasm-bindgen-futures = "=0.4.55"
 async-trait = "0.1.73"
 deno_error = "=0.7.1"
 deno_path_util = "=0.6.4"
-deno_semver = "=0.9.1"
+deno_semver = "=0.10.1"
 url = "2.5"
 
 [dependencies.chrono]
@@ -34,7 +34,7 @@ default-features = false
 features = ["rust_backend"]
 
 [dependencies.deno_ast]
-version = "=0.53.1"
+version = "=0.53.3"
 features = ["transpiling"]
 
 [dependencies.deno_cache_dir]
@@ -46,7 +46,7 @@ path = "../../deno/libs/config"
 features = ["workspace","sync"]
 
 [dependencies.deno_graph]
-version = "=0.107.1"
+version = "=0.110.1"
 features = ["swc"]
 default-features = false
 
@@ -76,11 +76,11 @@ path = "../../deno/libs/node_resolver"
 features = ["sync"]
 
 [dependencies.sys_traits]
-version = "=0.1.27"
+version = "=0.1.28"
 features = ["real"]
 
 [target."cfg(target_arch = \"wasm32\")".dependencies.sys_traits]
-version = "=0.1.27"
+version = "=0.1.28"
 features = ["real","wasm"]
 
 [profile.release]
